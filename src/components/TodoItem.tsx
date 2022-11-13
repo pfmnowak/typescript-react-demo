@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import classes from "./TodoItem.module.css";
 
 type TodoItemProps = {
   text: string;
@@ -6,7 +7,7 @@ type TodoItemProps = {
 };
 
 const TodoItem = (props: TodoItemProps) => {
-  return <li>{props.text}</li>;
+  return <li className={classes.item}>{props.text}</li>;
 };
 
 export default TodoItem;
